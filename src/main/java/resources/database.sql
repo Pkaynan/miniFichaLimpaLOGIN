@@ -25,6 +25,12 @@ CREATE TABLE produto (
     FOREIGN KEY (politico_id) REFERENCES politico(id)
 );
 
+CREATE TABLE usuario(
+	id INT AUTO_INCREMENT PRIMARY KEY,
+	nome VARCHAR(50) NOT NULL, 
+    pass VARCHAR(50) NOT NULL
+);
+
 -- Inserindo partidos
 INSERT INTO partido (nome, sigla) VALUES 
 ('Partido da Justiça Social', 'PJS'),
@@ -43,3 +49,12 @@ INSERT INTO produto (nome, preco, politico_id) VALUES
 ('Caneca do João do Povo', 25.00, 2),
 ('Botton Ana da Educação', 9.50, 3),
 ('Adesivo Maria da Saúde', 4.99, 1);
+
+-- Inserindo usuarios
+INSERT INTO usuario (nome, pass) VALUES
+('pietro', '123456');
+
+select * from produto;
+select * from politico;
+select * from partido;
+select * from usuario;

@@ -21,6 +21,8 @@
         	
             <a href="${pageContext.request.contextPath}/politico">Políticos</a>
             <a href="${pageContext.request.contextPath}/produto">Produtos</a>
+            <a href="${pageContext.request.contextPath}/logout" class="logout-button">Sair</a>
+            
         </div>
     </div>
 
